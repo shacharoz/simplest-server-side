@@ -1,0 +1,15 @@
+C:\Synced Docs\Projects\Conferences\2016 grosstet makeathon\projects\server example\MobileApp\Finder2\obj\Debug\CSharpAppSpeaksToSeverExample.csprojResolveAssemblyReference.cache
+C:\Synced Docs\Projects\Conferences\2016 grosstet makeathon\projects\server example\MobileApp\Finder2\obj\Debug\CSharpAppSpeaksToSeverExample.csproj.GenerateResource.Cache
+C:\Synced Docs\Projects\Conferences\2016 grosstet makeathon\projects\server example\MobileApp\Finder2\bin\Debug\Json.dll
+C:\Synced Docs\Projects\Conferences\2016 grosstet makeathon\projects\server example\MobileApp\Finder2\bin\Debug\Newtonsoft.Json.dll
+C:\Synced Docs\Projects\Conferences\2016 grosstet makeathon\projects\server example\MobileApp\Finder2\bin\Debug\RestSharp.dll
+C:\Synced Docs\Projects\Conferences\2016 grosstet makeathon\projects\server example\MobileApp\Finder2\bin\Debug\Json.pdb
+C:\Synced Docs\Projects\Conferences\2016 grosstet makeathon\projects\server example\MobileApp\Finder2\bin\Debug\Newtonsoft.Json.xml
+C:\Synced Docs\Projects\Conferences\2016 grosstet makeathon\projects\server example\MobileApp\Finder2\bin\Debug\RestSharp.xml
+C:\Synced Docs\Projects\Conferences\2016 grosstet makeathon\projects\server example\MobileApp\Finder2\bin\Debug\CSharpAppSpeaksToServerExample.exe.config
+C:\Synced Docs\Projects\Conferences\2016 grosstet makeathon\projects\server example\MobileApp\Finder2\bin\Debug\CSharpAppSpeaksToServerExample.exe
+C:\Synced Docs\Projects\Conferences\2016 grosstet makeathon\projects\server example\MobileApp\Finder2\bin\Debug\CSharpAppSpeaksToServerExample.pdb
+C:\Synced Docs\Projects\Conferences\2016 grosstet makeathon\projects\server example\MobileApp\Finder2\obj\Debug\CSharpAppSpeaksToServerExample.Properties.Resources.resources
+C:\Synced Docs\Projects\Conferences\2016 grosstet makeathon\projects\server example\MobileApp\Finder2\obj\Debug\CSharpAppSpeaksToServerExample.exe
+C:\Synced Docs\Projects\Conferences\2016 grosstet makeathon\projects\server example\MobileApp\Finder2\obj\Debug\CSharpAppSpeaksToServerExample.pdb
+C:\Synced Docs\Projects\Conferences\2016 grosstet makeathon\projects\server example\MobileApp\Finder2\obj\Debug\CSharpAppSpeaksToServerExample.Page1.resources
