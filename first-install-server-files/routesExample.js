@@ -3,6 +3,7 @@ module.exports = function(app) {
     
     // this is where all your code goes ========================================
 	
+    console.log('routes file running');
     
     ///SAMPLES DATABASE ========================================================
     var sampleDatabaseList = 
