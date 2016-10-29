@@ -45,7 +45,7 @@ var sampleDatabaseList =
 [   
     {   
         "timestamp": 1477514910, 
-        "name": "Keys", 
+        "name": "Keys",
         "position": {"x":1, "y":2, "width": 3, "height": 4}
     },
     {   
@@ -100,8 +100,6 @@ all POST requests should have this JSON formation
 **/
 app.post('/', function(req, res){
     
-    aa();
-    
     switch (req.body.function)      //the switch is used to see what function you like to ask from the server 
     {  
         case "add":
@@ -112,16 +110,16 @@ app.post('/', function(req, res){
                 {
                     "timestamp": 1477514910, 
                     "name": "Keys", 
+                    "status": 1,
                     "position": {"x":1, "y":2, "width": 3, "height": 4}
                 }
             }
             **/
             
-            newReceivedItem = req.body.info;
+            addNewItem(req.body.info);
             
-            sampleDatabaseList.push(newReceivedItem); //add new item to the database 
-            
-            res.send('POST request accepted. Item was added to list. Number of items in database: '+sampleDatabaseList.length);
+            console.log('request accepted');
+            res.send('POST request accepted. Item was added to list. Number of items in database: '+sampleDatabaseList.length); //send a response to the user 
             break;
         
         
@@ -133,37 +131,52 @@ app.post('/', function(req, res){
                 "requestedItemName": "Keys"
             }
             **/
-            searchedName = req.body.requestedItemName;
             
-            console.log('please find this item '+ searchedName);
+            //look for item by name
+            var resultItem = findItemByName (req.body.requestedItemName);
+  
             
-            for (var j = 0; j < sampleDatabaseList.length; j++){
-                if (sampleDatabaseList[j].name == searchedName) {
-                    console.log('FOUND IT: ' + sampleDatabaseList[j]);
-                    
-                    //prepare the object for sending by making it a json string
-                    var jsonString = JSON.stringify(sampleDatabaseList[j]);
-                    res.send(jsonString);
-                    
-                    console.log(jsonString);
-                    
-                    break;
-                }
+            //send result
+            //prepare the object for sending by making it a json string
+            if (resultItem == null){
+                var emptyJsonString = JSON.stringify( {"status":404} );
+                
+                console.log('SORRY, COULDNT FIND ITEM '+req.body.requestedItemName);
+                res.send(emptyJsonString);
+                
+            } else {
+                var jsonString = JSON.stringify(resultItem);
+                
+                console.log('send back: '+ jsonString);
+                res.send(jsonString);
             }
-
-            console.log('SORRY, COULDNT FIND ITEM '+searchedName);
-            res.send('SORRY, COULDNT FIND ITEM '+searchedName);
             break;
     }
 });
 
 
 
-function aa(){
-    console.log('hello');
-    
+function addNewItem(newReceivedItem){
+    console.log('adding item to database');
+    sampleDatabaseList.push(newReceivedItem); //add new item to the database 
+
 }
 
+function findItemByName(searchedName) {
+    console.log('looking for item name: '+ searchedName);
+    
+    for (var j = 0; j < sampleDatabaseList.length; j++){
+        if (sampleDatabaseList[j].name == searchedName) {
+            
+            console.log('FOUND IT: ' + sampleDatabaseList[j]);
+            return sampleDatabaseList[j];
+            
+            break;
+        }
+    }
+    
+    return null;
+}
 
 
 
