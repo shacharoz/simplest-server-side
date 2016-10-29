@@ -1,4 +1,4 @@
-# simplest-server-side
+## simplest-server-side
 a simple working server side open to multiple ways to access it (C#, Javascript, C++). it can be easily install and run in a few minutes
 
 
@@ -23,11 +23,26 @@ this server can also be of great use especially for you.
 - install nodeJS from https://nodejs.org/en/download/ 
 for standard installations, just pick the Windows installer for 64-bit
 
-- go to the directory of the future server (preferably a different directory then the rest of the app)
-and run CMD from there. 
-type: npm install
+- create a new directory for the server files
 
-after that your folder should be filled with our libs and a file called server.js
+- copy the initial install files into the server folder
+take these files from the "first-install" directory
+you should have: server.js , routes.js , package.json
+
+- install the server by typing "npm install" from the CMD of the server folder 
+after that your folder should have another folder called "node_modules" with lots of sub-folders and files
 
 (add a picture of the right folder content)
     
+
+
+# useful tools
+- postman: free tool for simulating calls to the server. highly useful to see that the server works.
+download from: https://www.getpostman.com/
+
+
+
+# people
+shachar oz, UX, SW, Maker. documentation and product.
+dor levy, SW Engineer and Maker. created the initial server
+omer goshen, Full Stack Dev.

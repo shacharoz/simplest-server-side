@@ -1,4 +1,3 @@
-
 {
   "name": "simple-server-ever",
   "main": "server.js",
@@ -8,4 +7,3 @@
 	"method-override" : "~2.0.2"
   }
 }
-
